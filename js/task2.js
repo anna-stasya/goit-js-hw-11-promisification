@@ -10,7 +10,7 @@ const users = [
   { name: 'Ajax', active: true },
   { name: 'Lux', active: false },
 ];
-const logger = updatedUsers => console.table(updatedUsers);
+const logger2 = updatedUsers => console.table(updatedUsers);
 
 //через промисы
 
@@ -22,8 +22,8 @@ const toggleUserState = (allUsers, userName) => {
     })
 }
 
-toggleUserState(users, 'Mango').then(logger);
-toggleUserState(users, 'Lux').then(logger);
+toggleUserState(users, 'Mango').then(logger2);
+toggleUserState(users, 'Lux').then(logger2);
 
 
 //через callback 
